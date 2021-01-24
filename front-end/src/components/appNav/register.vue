@@ -69,11 +69,11 @@ export default {
                     this.$store.dispatch('addCard', {id: inProgress, name: 'In progress'})
                     this.$store.dispatch('addCard', {id: done, name: 'Done'})
 
-                    await this.$store.dispatch('addTask', {idRoot: needToDo, id: shortid.generate(), task: 'Find great job'})
-                    await this.$store.dispatch('addTask', {idRoot: inProgress, id: shortid.generate(), task: 'Learn NestJS'})
-                    await this.$store.dispatch('addTask', {idRoot: inProgress, id: shortid.generate(), task: 'Learn Vuejs'})
-                    await this.$store.dispatch('addTask', {idRoot: inProgress, id: shortid.generate(), task: 'Learn full stack development'})
-                    await this.$store.dispatch('addTask', {idRoot: done, id: shortid.generate(), task: 'Make a full stack project'})
+                    await this.$store.dispatch('addTask', {idRoot: needToDo, id: shortid.generate(), task: 'Find great job', weight: 2})
+                    await this.$store.dispatch('addTask', {idRoot: inProgress, id: shortid.generate(), task: 'Learn NestJS', weight: 2})
+                    await this.$store.dispatch('addTask', {idRoot: inProgress, id: shortid.generate(), task: 'Learn Vuejs', weight: 3})
+                    await this.$store.dispatch('addTask', {idRoot: inProgress, id: shortid.generate(), task: 'Learn full stack development', weight: 4})
+                    await this.$store.dispatch('addTask', {idRoot: done, id: shortid.generate(), task: 'Make a full stack project', weight: 2})
 
                     this.$router.push('/board')
                     this.name = ''
