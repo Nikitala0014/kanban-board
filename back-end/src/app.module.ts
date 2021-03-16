@@ -12,7 +12,7 @@ import { AuthModule } from './auth/auth.module';
     UserModule,
     AuthModule,
     MongooseModule.forRoot(
-      'mongodb+srv://bruce00:good_day00@cluster0.kbrtk.mongodb.net/kanban-board?retryWrites=true&w=majority',
+      'mongodb+srv://username:password00@cluster0.kbrtk.mongodb.net/kanban-board?retryWrites=true&w=majority',
     ),
   ],
   controllers: [AppController],
